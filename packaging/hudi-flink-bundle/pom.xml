@@ -422,6 +422,12 @@
       <artifactId>flink-parquet_${scala.binary.version}</artifactId>
       <version>${flink.version}</version>
       <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <artifactId>parquet-hadoop</artifactId>
+          <groupId>org.apache.parquet</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.flink</groupId>
@@ -456,6 +462,10 @@
         <exclusion>
           <groupId>it.unimi.dsi</groupId>
           <artifactId>fastutil</artifactId>
+        </exclusion>
+        <exclusion>
+          <artifactId>avro</artifactId>
+          <groupId>org.apache.avro</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -518,6 +528,10 @@
           <groupId>org.pentaho</groupId>
           <artifactId>*</artifactId>
         </exclusion>
+        <exclusion>
+          <artifactId>avro</artifactId>
+          <groupId>org.apache.avro</groupId>
+        </exclusion>
       </exclusions>
     </dependency>
     <dependency>
@@ -547,6 +561,10 @@
         <exclusion>
           <artifactId>guava</artifactId>
           <groupId>com.google.guava</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>avro</artifactId>
+          <groupId>org.apache.avro</groupId>
         </exclusion>
       </exclusions>
     </dependency>
