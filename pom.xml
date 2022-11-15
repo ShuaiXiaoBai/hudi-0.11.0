@@ -108,9 +108,9 @@
     <log4j.test.version>2.17.0</log4j.test.version>
     <slf4j.version>1.7.30</slf4j.version>
     <joda.version>2.9.9</joda.version>
-    <hadoop.version>2.10.1</hadoop.version>
+    <hadoop.version>3.1.0</hadoop.version>
     <hive.groupid>org.apache.hive</hive.groupid>
-    <hive.version>2.3.1</hive.version>
+    <hive.version>3.1.0</hive.version>
     <hive.exec.classifier>core</hive.exec.classifier>
     <metrics.version>4.1.1</metrics.version>
     <orc.version>1.6.0</orc.version>
@@ -121,7 +121,7 @@
     <spark2.version>2.4.4</spark2.version>
     <spark3.version>3.2.1</spark3.version>
     <sparkbundle.version></sparkbundle.version>
-    <flink1.14.version>1.14.4</flink1.14.version>
+    <flink1.14.version>1.14.6</flink1.14.version>
     <flink1.13.version>1.13.6</flink1.13.version>
     <flink.version>${flink1.14.version}</flink.version>
     <hudi.flink.module>hudi-flink1.14.x</hudi.flink.module>
@@ -1168,6 +1168,18 @@
     </dependencies>
   </dependencyManagement>
   <repositories>
+    <repository>
+      <id>nexus-aliyun</id>
+      <name>nexus-aliyun</name>
+      <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+
     <repository>
       <id>Maven Central</id>
       <name>Maven Repository</name>
